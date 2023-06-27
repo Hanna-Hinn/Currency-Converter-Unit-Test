@@ -28,7 +28,7 @@ How to setup project:
 Notes:   
 1.) Backend will run on localhost:8080, frontend will run on localhost:3000  
 2.) Backend APIs are :  
-&emsp;* http://localhost:8080/api/v1/currency/exchange?targetCurrency=<targetCurrency>&sourceCurrency=<SourceCurrency>&rateSource=<API or DB> --> returns double value  
+&emsp;* http://localhost:8080/api/v1/currency/exchange?targetCurrency={targetCurrency}&sourceCurrency={SourceCurrency}&rateSource={API or DB} --> returns double value  
 &emsp;* http://localhost:8080/api/v1/currency/shorthand --> return a list of currencies in shorthand  
 &emsp;* http://localhost:8080/api/v1/currency/updateDB --> Updates and fills the database with curriences and exhangerates  
 
