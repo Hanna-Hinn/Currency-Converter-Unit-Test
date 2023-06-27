@@ -1,7 +1,9 @@
 # Currency-Converter-Unit-Test
-Currency-Exchange project includes all the currencies in the world.
+Currency-Exchange project includes all the currencies in the world.   
 
-This project was made to practice unit testing in java
+This project was made to practice unit testing in java   
+
+**PLEASE READ THE SETUP PROJECT AND NOTES VERY CAREFULLY BEFORE RUNNING THE PROJECT!!!**  
 
 Technologies used:   
 1.) Spring boot maven project (backend)   
@@ -11,11 +13,11 @@ Technologies used:
 5.) Postman for api testing and html reports  
 6.) Selenium IDE and Selenium webdriver for testing the frontend
 
-How to setup project: 
+How to setup project:  
 &emsp; 1.) Download or clone respo  
 &emsp; 2.) for backend: build project or run project   
-&emsp; 3.) for frontend, run npm install in terminal when opening the frontend path in it   
-
+&emsp; 3.) for frontend, run npm install in terminal when opening the frontend path in it
+&emsp; 4.) **wHEN FIRST RUNNING THE SERVERS PLEASE CALL THE FOLLWOING API OR CLICK ON THE UPDATEdb
 
 Notes: 
 1.) Backend will run on localhost:8080, frontend will run on localhost:3000  
