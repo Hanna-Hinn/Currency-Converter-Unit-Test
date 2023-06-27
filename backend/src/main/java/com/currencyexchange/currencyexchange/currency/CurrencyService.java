@@ -79,7 +79,7 @@ public class CurrencyService {
     //Call External API
     public HashMap<String,Double> callAPI(String sourceCurrencyCode) throws Exception {
 
-            URL url = new URL("https://v6.exchangerate-api.com/v6/9bbeabae506641e36da46f50/latest/"+sourceCurrencyCode); // Replace with your API URL
+            URL url = new URL("https://v6.exchangerate-api.com/v6/8a8617f7cf53c224d4fceeb7/latest/"+sourceCurrencyCode); // Replace with your API URL
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
 
@@ -112,6 +112,7 @@ public class CurrencyService {
 
     //Save the Data from the APIs into the Database.
     public String saveAPItoDB(){
+//        currencyRepository.deleteAll();
         try {
             HashMap<String,Double> map = callAPI("USD");
 
@@ -125,6 +126,7 @@ public class CurrencyService {
                 Currency currency = new Currency(i, callAPI(i));
                 currencies.add(currency);
             }
+
 
             currencyRepository.saveAll(currencies);
             currencyRepository.flush();
