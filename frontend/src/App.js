@@ -22,20 +22,22 @@ import "./App.css";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [currencies, setCurrencies] = useState(["USD", "JOD", "EUR"]);
+  const [currencies, setCurrencies] = useState([]);
   const [source, setSource] = useState("");
   const [target, setTarget] = useState("");
   const [rate, setRate] = useState(0);
   const [amount, setAmount] = useState(0);
   const [rateSource, setRateSource] = useState("API");
-
+  const [updateDB, setUpdateDB] = useState(false);
+  
   useEffect(() => {
+    setCurrencies([]);
     axios
       .get("http://localhost:8080/api/v1/currency/shorthand")
       .then((response) => {
         setCurrencies(response.data.sort());
       });
-  }, []);
+  }, [updateDB]);
 
   const handleSourceChange = (event) => {
     setSource(event.target.value);
@@ -54,7 +56,6 @@ function App() {
   };
 
   const handleSubmit = (event) => {
-    console.log("TEST");
     axios
       .get(
         `http://localhost:8080/api/v1/currency/exchange?targetCurrency=${target}&sourceCurrency=${source}&rateSource=${rateSource}`
@@ -65,8 +66,14 @@ function App() {
   };
 
   const handleUpdate = (event) => {
+    axios
+      .get(`http://localhost:8080/api/v1/currency/updateDB`)
+      .then((response) => {
+        setUpdateDB(true);
+      });
 
   };
+
 
   return (
     <Box id="content">
