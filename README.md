@@ -18,9 +18,7 @@ How to setup project:
 &emsp; 1.) Download or clone respo  
 &emsp; 2.) for backend: build project or run project   
 &emsp; 3.) for frontend, run npm install in terminal when opening the frontend path in it   
-&emsp; 4.) ** **WHEN YOU START THE SERVER, PLEASE CLICK ON THE UpdateBD BUTTON IN FRONTEND**     
-&emsp; **OR CALL THE updateDB API IN THE BACKEND BECAUSE THE ONCE THE SERVER IS DISCONNECTED THE DATABASE WILL DROP**   
-&emsp; **Note: I tried to fix it but its something inside the configuration of the project. All tries lead to bigger problems**   
+
 
 
 
