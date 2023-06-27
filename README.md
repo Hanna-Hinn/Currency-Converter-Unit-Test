@@ -1,5 +1,5 @@
 # Currency-Converter-Unit-Test
-done by: hanna Hinn, Ghazi Tarazi, Malek Aqel.  
+done by: Hanna Hinn 1190336, Ghazi Tarazi 1180391, Malek Aqel 1182405.  
 Currency-Exchange project includes all the currencies in the world.   
 
 This project was made to practice unit testing in java   
