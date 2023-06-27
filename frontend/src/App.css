@@ -1,0 +1,27 @@
+#content {
+  width: 600px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+#card {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 10px !important;
+  background-color: #c3d9a3 !important;
+}
+
+.card-content {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+/* .card-content-elements { 
+    flex-basis: 50% !important;
+} */
+
+.form-element {
+  width: 200% !important;
+  margin: 10px !important;
+  padding: 10px;
+}

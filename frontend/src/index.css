@@ -1,0 +1,23 @@
+:root{
+  --main-c: #D16A60;
+  --main-c-active: #C25B51;
+  --main-bc: #243455;
+  --sec-bc: #1d2a44;
+  --main-bg: #F2F2F2
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--main-bc);
+  font-size: 20px;
+}
+
+body{
+  background-color: var(--main-bg);
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
