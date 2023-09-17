@@ -15,9 +15,9 @@ Technologies used:
 6.) Selenium IDE and Selenium web driver for testing the frontend
 
 How to set up the project:  
-&emsp; 1.) Download or clone repo  
-&emsp; 2.) for backend: run build project 
-&emsp; 3.) For frontend, run npm install in the terminal when opening the frontend path in it   
+&emsp; 1.) Download or clone repo    
+&emsp; 2.) for backend: run build project   
+&emsp; 3.) For frontend, run npm install in the terminal when opening the frontend path in it     
 
 
 
